@@ -1,0 +1,179 @@
+body{
+    font-family: 'Tangerine';
+    font-weight: 700;
+    font-size: 2rem;
+    background-color:#000;
+    color:whitesmoke;
+}
+
+.text_wrapper{
+    width: 100%;
+    height: 100%;
+    color: aliceblue;
+    position: absolute;
+}
+
+.text_grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.text{
+    background-color: #000;
+    width:50vw;
+    height:50vh;
+
+}
+
+.text_1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text_2{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text_3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text_4{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    cursor: pointer;
+    z-index: 2;
+    animation: fadeIn 40s;
+}
+
+a{
+    text-decoration: none;
+    font-size: 3rem;
+    color:whitesmoke;
+}
+a:hover{
+    color:goldenrod;
+    font-size: 3rem;
+}
+
+.wrapper{
+    display: flex;
+    width: 100%;
+    height:100%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.core{
+    width : 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0,auto;
+    background-color: rgb(212, 173, 76);
+    animation: 15s ease-out 5s both coreMove;
+}
+
+.door_container{
+    display:flex;
+    justify-content:space-around;
+    overflow:hidden;
+}
+
+.door_left{
+    background-color: greenyellow;
+    width:50vw;
+    height: 100vh;
+    animation: 10s ease-out 2s both moving;
+    z-index: 2;
+}
+
+.door_right{
+    background-color:fuchsia;
+    width:50vw;
+    height: 100vh;
+    animation: 10s ease-out 2s both moving_1;
+    z-index: 2;
+}
+
+.row{
+    width:100%;
+    height: 16.66%;
+}
+
+.color1{
+    background-color: darkorchid;
+}
+.color2{
+    background-color:dodgerblue;
+}
+.color3{
+    background-color:  greenyellow;
+}
+.color4{
+    background-color: yellow;
+}
+.color5{
+    background-color: orange;
+}
+.color6{
+    background-color:red;
+}
+
+.poort_text{
+    color:#000;
+    font-size: 5rem;
+    font-weight:700;
+    top:30vh;
+    position: absolute;
+    z-index: 3;
+    margin: 0,auto;
+    animation: 10s ease-out 2s both fadeOut;
+}
+
+
+
+@keyframes moving {
+    0%{transform: translateX(0);}
+    100%{transform: translateX(-100%);}
+    
+}
+
+@keyframes moving_1 {
+    0%{transform: translateX(0%);}
+    100%{transform: translateX(100%);}
+    
+}
+
+@keyframes coreMove{
+    0%{transform: translateY(500%)}
+    100%{transform: translateY(0)}
+}
+
+@keyframes fadeIn{
+    0%{opacity:0;}
+    100%{opacity: 1}
+}
+
+@keyframes fadeOut{
+    0%{opacity: 100%;}
+    100%{opacity: 0%}
+}
+
+@media all and (max-width: 500px){
+    .poort_text{
+        font-size: 2.5rem;
+    }
+}
