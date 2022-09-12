@@ -9,6 +9,7 @@
     --required: #fa5a5a;
     --text-underline: underline;
     --h1-font-family: "Tangerine";
+    --h2-font-family:"Open Sans";
 }
 body{
     background-color:#000;
@@ -104,7 +105,123 @@ p{
     letter-spacing: 1px;
 }
 
+/* WHAT Page */
+
+/* WORKPAGE */
+
+/* Header as flexboxcontainer with flexchildren */
+.page-header {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* flex-first-child: logo */
+  .page-header__item {
+    flex: 0 1 200px;
+  }
+  
+  /* flex-last-child */
+  .page-header__item:last-child {
+    flex-grow: 1;
+    text-align: right;
+  }
+  
+  /* header workpage */
+  .work-header {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .work-header__item {
+    font-size: 4rem;
+    color: var(--gold-color);
+  }
+  
+  /* *********************** */
+  
+  /* GRID */
+  
+  /* *********************** */
+  
+  /* start grid fallback */
+  .grid__item {
+    font-family: var(--h2-font-family);
+    display: inline-block;
+    width: 33%;
+  }
+  
+  /* end grid fallback */
+  
+  /* Grid on Workpage */
+  
+  /* parent:container */
+  
+  /* Grid support */
+  @supports (display: grid) {
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 20px;
+      margin: 0;
+    }
+  
+    /* flexchildren */
+  
+    .grid__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        color: var(--primary-color);
+        width: auto;
+        min-height: auto;
+        padding: 20px;
+        margin: 0;
+    }
+  
+    /* .grid__item:last-child{
+    grid-column: 3/3;
+    grid-row: 1/3;
+  } */
+  
+    .grid__itemlink {
+      color: var(--primary-color);
+    }
+
+    img{
+        width:250px;
+        height: 300px;
+    }
+  
+  
+  /* ******************** */
+  
+  /* FOOTER */
+  
+  /* ******************** */
+  
+  /* styling social media icons */
+  .fa-brands {
+    color: var(--secondary-color);
+    font-size: 2em;
+  }
+  
+  .page-footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    clear: both;
+  }
+}
+  
+  /* ************************ */
+  
+/* MEDIA */
+
 @media all and (max-width: 500px){
+  /* WHO */
     .header_title{
         display:flex;
         flex-direction: column;
@@ -134,5 +251,8 @@ p{
         width:93vw;
 
     }
-
+    /* WHAT */
+    .grid {
+      grid-template-columns: 1fr;
+    }
 }
