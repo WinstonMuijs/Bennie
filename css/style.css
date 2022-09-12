@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 :root{
     --primary-color: #000;
     --secondary-color: #fff;
@@ -101,4 +102,37 @@ body{
 p{
     font-family: 'Open Sans';
     letter-spacing: 1px;
+}
+
+@media all and (max-width: 500px){
+    .header_title{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .header_name{
+        margin:0;
+
+    }
+
+    .nav-list li{
+        display: block;
+        margin: 0;
+    }
+
+    .container{
+        display: block;
+        width:100vw;
+    }
+    .photo{
+        margin:0px;
+    }
+    .text{
+        padding: 0 10px 0 10px;
+        margin: 0px;
+        width:93vw;
+
+    }
+
 }
