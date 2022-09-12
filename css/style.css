@@ -100,14 +100,13 @@ body{
     width: 375px;
     height: 500px;
 }
+
 p{
     font-family: 'Open Sans';
     letter-spacing: 1px;
 }
 
 /* WHAT Page */
-
-/* WORKPAGE */
 
 /* Header as flexboxcontainer with flexchildren */
 .page-header {
@@ -252,7 +251,7 @@ p{
 
     }
     /* WHAT */
-    /* .grid {
+    .grid {
       grid-template-columns: 1fr;
-    } */
+    }
 }
