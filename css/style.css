@@ -86,7 +86,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    width:100%;
+    width:100vw;
 
 }
 
@@ -248,8 +248,7 @@ p{
 
     .header-toggle{
       display: flex;
-      justify-content: space-between;
-      align-content: center;
+      justify-content: space-around;
       align-items: baseline;
       background: #000;
     }
@@ -310,9 +309,11 @@ p{
 
     .container{
         display: block;
-        width:100vw;
+        max-width:100%;
     }
     .photo{
+      display:flex;
+      justify-content: center;
       width:100%;
       margin:0px;
     }
