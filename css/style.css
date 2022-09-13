@@ -239,7 +239,7 @@ p{
     }
 
     .pers_name{
-      font-size: 2.5rem;;
+      font-size: 3rem;;
     }
 
     .nav-toggle{
@@ -248,7 +248,7 @@ p{
 
     .header-toggle{
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: baseline;
       background: #000;
     }
