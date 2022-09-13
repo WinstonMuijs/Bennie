@@ -209,6 +209,7 @@ p{
   .fa-brands {
     color: var(--secondary-color);
     font-size: 2em;
+    margin: 0 10px;
   }
   
   .page-footer {
@@ -216,6 +217,7 @@ p{
     flex-direction: column;
     text-align: center;
     clear: both;
+    margin-bottom: 50px;
   }
 }
   
@@ -324,6 +326,9 @@ p{
 
     }
     /* WHAT */
+    .work-header__item{
+      font-size: 3rem;
+    }
     .grid {
       grid-template-columns: 1fr;
     }
