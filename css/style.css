@@ -78,6 +78,10 @@ body{
     text-decoration: var(--text-underline);
   }
 
+  .nav-toggle{
+    visibility: hidden;
+  }
+
 .container{
     display: flex;
     justify-content: center;
@@ -232,6 +236,10 @@ p{
 
     .header_name{
       margin: 10px;
+    }
+
+    .nav-toggle{
+      visibility: visible;
     }
 
     .header-toggle{
