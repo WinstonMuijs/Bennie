@@ -198,6 +198,139 @@ p{
         height: 300px;
     }
   
+  /* CONTACT PAGE */
+  .information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Open Sans';
+  }
+  
+  .information__header {
+    font-size: 1rem;
+    color: var(--gold-color);
+    margin-bottom: 20px;
+  }
+  
+  /* form on contact.html */
+  .contact-form {
+    display: block;
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  
+  .contact-information {
+    display: flex;
+    max-width: 500px;
+    gap: 20px;
+  }
+  
+  .contact-information__item1 {
+    padding: 20px;
+    margin-right: 20px;
+  }
+  
+  .contact-information__item2 {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  /* form elements: labels, inputfields */
+  .contact-label {
+    margin: 10px 0;
+    width: 100%;
+    color: var(--secondary-color);
+  }
+  
+  .information__fullname {
+    margin: 10px 0;
+    width: 100%;
+    color: var(--secondary-color);
+  }
+  
+  .information__email {
+    margin: 10px 0;
+    width: 100%;
+    color: var(--secondary-color);
+  }
+  
+  .information__subject {
+    margin: 10px 0;
+    width: 100%;
+    color: var(--secondary-color);
+  }
+  
+  .information__message {
+    margin: 10px 0;
+    width: 100%;
+    color: var(--secondary-color);
+  }
+  
+  /* contact information elements */
+  .contact-information__mail {
+    color: var(--turquoise-color);
+  }
+  
+  .contact-information__tel {
+    color: var(--turquoise-color);
+  }
+  
+  .contact-information__mail--visited:visited {
+    color: var(--turquoise-color);
+  }
+  
+  .contact-information__tel--visited:visited {
+    color: var(--turquoise-color);
+  }
+  
+  .contact-information__mail--hover:hover {
+    color: var(--secondary-color);
+    text-decoration: var(--no-decoration);
+  }
+  
+  .contact-information__mail--hover:focus {
+    color: var(--secondary-color);
+    text-decoration: var(--no-decoration);
+  }
+  
+  .contact-information__tel--hover:hover {
+    color: var(--secondary-color);
+    text-decoration: var(--no-decoration);
+  }
+  
+  .contact-information__tel--hover:focus {
+    color: var(--secondary-color);
+    text-decoration: var(--no-decoration);
+  }
+  
+  .contact-information__mail--active:active {
+    color: green;
+  }
+  
+  .contact-information__tel--active:active {
+    color: green;
+  }
+  
+  /* styling for contact information links */
+  #personal-email {
+    color: var(--gold-color);
+  }
+  
+  #personal-number {
+    color: var(--gold-color);
+  }
+  
+  #agency-email {
+    color: var(--gold-color);
+  }
+  
+  /* styling for required inputfields */
+  abbr {
+    color: var(--required);
+  }
   
   /* ******************** */
   
@@ -340,5 +473,21 @@ p{
     }
     .grid {
       grid-template-columns: 1fr;
+    }
+    /* Contact */
+   
+    .form-flexboxcontainer{
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; 
+    }
+  
+    input {
+      padding: 8px;
+    }
+  
+    .form-btn {
+      width: 100%;
     }
 }

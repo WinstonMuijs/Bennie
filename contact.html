@@ -39,14 +39,60 @@
             </ul>
         </nav>
     </header>
-    <main class="container">
-        <section class="photo">
-            
-        </section>
-        <section class="text">
-            
-        </section>
-    </main>
+        <section class="information">
+            <h1 class="information__header">Voor meer informatie neem contact voor een <span title=" cup of coffee"> &#x2615; </span>!</h1>
+          <!-- contact form -->
+            <div class="form-flexboxcontainer">
+              <form class="contact-form" action="#" method="post">
+              <!-- name -->
+                <label class="contact-label" for="fullname">
+                  <span>Volledige naam</span>
+                  <abbr title="required">*</abbr>
+                </label>
+                <input type="text" name="fullname" class="information__fullname" id="fullname" placeholder="Fullname" required>
+              <!-- email -->
+                <label class="contact-label" for="email">
+                  <span>Het emailadres</span>
+                  <abbr title="required">*</abbr>
+                </label>
+                <input type="email" name="email" class="information__email" id="email" placeholder="Your email" required>
+              <!-- subject -->
+                <label class="contact-label" for="subject">
+                  <span>Onderwerp</span>
+                </label>
+                <input type="text" name="subject" class="information__subject" id="subject" placeholder="Subject" >
+              <!-- message -->
+                <label class="contact-label" for="message">
+                  <span>Uw bericht of vraag</span>
+                  <abbr title="required">*</abbr>
+                </label>
+                <textarea name="message" id="message" class="information__message" rows="4" cols="30" maxlength="240" placeholder="A message or question in 240 words" required>
+                </textarea>
+              <!-- button -->
+                <button class="form-btn" type="submit" value="Submit">Verstuur</button>
+              </form>
+            </div>
+          <!-- end of contact-form -->
+            <div class="contact-information">
+            <!-- contact information -->
+              <div class="contact-information__item1">
+                Benno Oude Wesselink<br>
+                Broekhaven 13<br>
+                1215 LL Hilversum<br>
+                Nederland
+              </div>
+              <div class="contact-information__item2">
+              <!-- email -->
+                <label id="personal-email">Email:</label>
+                <a class="contact-information__mail contact-information__mail--visited contact-information__mail--active contact-information__mail--hover" href="mailto:info@benhart.nl">info@benhart.nl</a>
+              <!-- telephone -->
+                <label id="personal-number">Telephone:</label>
+                <a class="contact-information__tel contact-information__tel--visited contact-information__tel--active contact-information__tel--hover" href="tel:+31640407960" aria-label="telephone number" >+31640407960</a>
+              <!-- contact me -->
+                <a id="agency-email" href="mailto:info@benhart.nl">Contact me</a>
+              </div>
+            </div>
+          </section>
     <footer class="page-footer">
         <p class="find-me">Find me on</p>
         <!-- list of social media icons -->
@@ -57,6 +103,7 @@
           <!-- linkedin -->
           <!-- <img src="img/linkedin_icon.svg" alt="logo linkedin" class="icons"/> -->
           <a class="icon" aria-label="icon" href="https://www.linkedin.com/in/winston-h-muijs-3062a515/"><i class="fa-brands fa-linkedin"></i></a>
+          <a class="icon" aria-label="icon" href="https://wa.me/31640407960"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
         <!-- end of list -->
       </footer>
