@@ -91,7 +91,7 @@ body{
 }
 
 .photo{
-    margin:100px 100px 0px 200px;
+    margin:50px 100px 0px 200px;
 }
 
 .text{
@@ -309,13 +309,22 @@ p{
         margin: 0;
     }
 
+    .benno{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 3rem;
+    }
+
     .container{
         display: block;
         max-width:100%;
     }
     .photo{
       display:flex;
+      flex-direction: column;
       justify-content: center;
+      align-items: center;
       width:100%;
       margin:0px;
     }
