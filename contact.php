@@ -78,7 +78,7 @@
             else:
             ?>
             <div class="form-flexboxcontainer">
-              <form class="contact-form" action="#" method="post">
+              <form class="contact-form" action="email.php" method="POST" class="form">
               <!-- name -->
                 <label class="contact-label" for="fullname">
                   <span>Volledige naam</span>
