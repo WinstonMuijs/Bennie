@@ -252,25 +252,25 @@ p{
   .information__fullname {
     margin: 10px 0;
     width: 100%;
-    color: var(--secondary-color);
+    color: var(--primary-color);
   }
   
   .information__email {
     margin: 10px 0;
     width: 100%;
-    color: var(--secondary-color);
+    color: var(--primary-color);
   }
   
   .information__subject {
     margin: 10px 0;
     width: 100%;
-    color: var(--secondary-color);
+    color: var(--primary-color);
   }
   
   .information__message {
     margin: 10px 0;
     width: 100%;
-    color: var(--secondary-color);
+    color: var(--primary-color);
   }
   
   /* contact information elements */
