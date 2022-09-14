@@ -1,3 +1,29 @@
+<?php
+	$message_sent = false;
+	if(isset($_POST['email']) && $_POST['email'] != ''){
+		
+		if( filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) ){
+		
+			//submit the form
+				$userName = $_POST['name'];
+				$userEmail = $_POST['email'];
+				$messageSubject = $_POST['subject'];
+				$message = $_POST['message'];
+
+				$to = "techrat@protonmail.com";
+			    $body = "";
+		
+				$body .="From: ".$userName. "\r\n";
+				$body .="Email: ".$userEmail. "\r\n";
+				$body .="Message: ".$message. "\r\n";
+
+				mail($to,$messageSubject,$body);
+			    
+			
+		  		$message_sent = true;
+		  }
+	  }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,6 +68,15 @@
         <section class="information">
             <h1 class="information__header">Voor meer informatie neem contact voor een <span title=" cup of coffee"> &#x2615; </span>!</h1>
           <!-- contact form -->
+            <?php
+            if($message_sent):
+            ?>
+      
+              <h1>Tijd Voor koffie</h1>
+      
+            <?php
+            else:
+            ?>
             <div class="form-flexboxcontainer">
               <form class="contact-form" action="#" method="post">
               <!-- name -->
@@ -72,6 +107,9 @@
                 <button class="form-btn" type="submit" value="Submit">Verstuur</button>
               </form>
             </div>
+            <?php
+            endif;
+            ?>
           <!-- end of contact-form -->
             <div class="contact-information">
             <!-- contact information -->
